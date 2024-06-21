@@ -18,6 +18,8 @@
 // *************************************************************************
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define CASTLES_VERSION "13.0.0-beta"
 #define CASTLES_UPDATED "21 Jun 2024 (09:05 / 9:05AM)"
@@ -53,7 +55,8 @@ char* finsertln(char* prompt) {
 }
 
 void version() {
-    println(("CASTLES & PATHWAYS, v%s, recent build d#: %s", CASTLES_VERSION, CASTLES_UPDATED));
+    char* vstr = "CASTLES & PATHWAYS, v13.0.0-beta";
+    println(vstr);
     println("Copyright (C) 2020 - 2024 Ben Daws");
     fprintln("\n"); // seperator
     println("This program comes with ABSOLUTELY NO WARRANTY;");
@@ -64,12 +67,12 @@ void version() {
 // currently working on a complete rewrite (v13)
 
 int main(int argc, char* argv[]) {
-    if (argc > 1) {
+    if (argc > 2) {
         println("error: invalid # of args (only 1 argument, or none)");
         return 1;
     }
 
-    if (strcmp(argv[0], "--version") == 0) {
+    if (strcmp(argv[1], "--version") == 0) {
         version();
         return 0;
     }

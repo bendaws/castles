@@ -1,0 +1,84 @@
+   CASTLES & PATHWAYS, version 13.0.0-beta (testing)
+======================================================
+
+Castles & Pathways is a terminal-based strategy game based around (can you guess?) castles & trails.
+You can grab the current release at the Git repository, or clone it and build a testing release yourself.
+
+                TABLE OF CONTENTS
+======================================================
+1: Build & Install
+    1.1: Download stable release
+    1.2: Clone git repository
+    1.3: Install via. Makefile
+    1.4: Troubleshooting
+2: Command Line Options
+3: How To Play
+    3.1: Defense (Defenders)
+    3.2: Offense (Attackers)
+    3.3: Points System
+4: Credits
+
+                BUILD & INSTALL
+======================================================
+
+Currently, the only systems that Castles & Pathways is designed for is *nix systems (eg. Linux & macOS
+(excluding Mac OS 9 and below)).
+
+            Download a stable release
+======================================================
+
+Latest builds of Castles & Pathways are avaliable from the GitHub source page. You can pick one up at
+this link:
+
+        https://github.com/bendaws/castles
+
+To extract the archive (via tar), use this command:
+
+        tar -xf ../../castles-13.0.0-beta.tar.gz
+
+Then, you can cd into the build directory.
+
+        cd castles-13.0.0-beta
+
+                Clone git repository
+======================================================
+
+From the same link, you can clone a testing release.
+
+        git clone https://github.com/bendaws/castles
+        cd castles
+
+                Install via. Makefile
+======================================================
+GNU Make is a simple and open-source tool to build open-source software. It will automatically detect
+if you need updates to files that already exist. To install GNU Make, see your operating system's
+documentation.
+
+There are three targets to build:
+    - castles: Builds "castles.c" and moves it into the build directory.
+    - install: Moves the working castles build into /usr/local/bin.
+    - all: Does all of the above automatically (in correct order).
+
+Here's how to use targets if you don't know:
+
+make <castles/install/all> # note: replace any text in <> brackets with what target you want.
+
+                Command Line Options
+======================================================
+
+castles --version:  Prints the current version of Castles you are running as well as a header
+                    included as part of the GNU General Public License v3.0.
+
+castles --git:      Returns the link to the GitHub repository.
+
+castles --test:     Makes sure all files necessary for Castles to launch exist.
+                    Output of "yes" means that it is ready to play, and output of "no" means
+                    something is missing.
+
+castles --play:     Starts the game.
+
+castles:            Shortcut for "castles --play"
+
+                    How to play
+======================================================
+incomplete section. Check back later
