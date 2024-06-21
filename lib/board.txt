@@ -1,0 +1,8 @@
+****************************************************************************************************************************************************
+*  KEY:                           *  NOTES:                                *                                                                       *
+*    # - castle wall              *     - elevation is topographic         *     Castles & Pathways target version: v13.0.0-beta (revision 2)      *
+*      - ground (nothing)         *     - this is only an example map      *                                                                       *
+*    X - offense (attackers)      *                                        *                                                                       *
+*    O - defense (defenders)      *                                        *                                                                       *
+*    % - elevation change         *                                        *                                                                       *
+****************************************************************************************************************************************************
